@@ -1,0 +1,252 @@
+/* Estilos CSS existentes */
+
+.banner-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.banner-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.banner-text {
+  position: absolute;
+  top: 40%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 24px;
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+}
+
+.custom-btn {
+  border-color: white;
+}
+
+.header-buttons {
+  display: flex;
+  align-items: flex-start;
+}
+
+p {
+  font-size: large;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Estilos do cabeçalho */
+
+/* Modificação: Alteração do seletor para .header-container */
+header.container {
+  padding: 2px;
+}
+
+.header-icons {
+  display: flex;
+  align-items: center;
+}
+
+.header-icons img {
+  width: 96px;
+  height: 64px;
+  margin-top: 10px;
+}
+
+.header-container .icon {
+  display: none;
+}
+
+/* Remoção: Estilos desnecessários removidos */
+
+.header {
+  background-color: #3D53A3;
+  color: white;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.header img {
+  width: 76px;
+  height: 54px;
+  margin-top: 10px;
+}
+
+.header a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header .icon {
+  display: none;
+}
+
+@media screen and (max-width: 770px) {
+  .header a:not(:first-child) {
+    display: none;
+  }
+
+  .header a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .header.responsive {
+    position: relative;
+  }
+
+  .header.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .header.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+  
+}
+
+/* Estilos do rodapé */
+
+/* Modificação: Alteração do seletor para .footer */
+.footer {
+  background-color: #BD0000;
+  color: white;
+  padding: 20px;
+  
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.footer-icons img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  
+}
+
+@media (max-width: 770px) {
+  
+  
+.btn {
+  display: none;
+}
+
+
+}
+
+@media (max-width: 250px) {
+  
+  .footer-icons{
+    display: none;
+  }
+  
+  }
+  
+
+  @media (max-width: 770px) {
+    .footer-icons {
+      justify-content: center;
+      margin-bottom: 15px;
+    }
+
+  }
+
+
+
+
+
+
+
+.menu {
+  display: none;
+  position: relative; 
+  z-index: 100;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 770px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    font-size: 24px;
+    color: white;
+    z-index: 200;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 90px;
+    right: 20px;
+    background-color: #3D53A3;
+    opacity: 0.86;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .menu a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+  }
+
+  .menu a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+}
+
+
+@media screen and (min-width: 770px) {
+  .header a:not(:first-child) {
+    display: inline-block;
+  }
+
+  .menuItem {
+    display: none;
+  }
+}
